@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uberry Fancy | Premium Cakes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in-page">
+
+    <div class="bg-wrapper"><div class="glow-orb orb-1"></div><div class="glow-orb orb-2"></div><div class="glow-orb orb-3"></div><div class="bg-grid-overlay"></div></div>
+
+    <header class="navbar">
+        <div class="logo">Uberry <span>Fancy</span></div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item active">Home</a>
+            <a href="service.html" class="nav-item">Services</a>
+            <a href="products.html" class="nav-item">Products</a>
+            <a href="contact.html" class="nav-item">Contact Us</a>
+        </nav>
+        <button class="nav-btn-me">Me</button>
+    </header>
+
+    <main class="page-container">
+        <section id="home" class="page-content-wrapper">
+            <div class="hero-section">
+                <span class="hero-badge">🍰 Sweetest Spot in Town</span>
+                <h1 class="hero-title">Premium <span>Cakes</span> & Crafts</h1>
+                <p class="hero-subtitle">Sip authentic bubble tea, specialty coffees, and  candies.</p>
+                <button class="magnetic-btn transition-link" 
+        id="go-to-products-btn" 
+        onclick="document.body.classList.add('fade-out-left'); setTimeout(() => { window.location.href = 'products.html'; }, 600);">
+    <span class="btn-text" style="pointer-events: none;">More Products</span>
+    <span class="btn-glare" style="pointer-events: none;"></span>
+</button>
+            </div>
+
+            <div class="bento-preview-container">
+                <h2 class="section-title">Today's Sweet Highlights</h2>
+                <div class="bento-grid-home">
+                    
+                    <div class="bento-card item-tall" style="--card-bg: url('img/brown\ sugar\ boba.webp');">
+                        <div class="item-visual">🧋</div>
+                        <div class="item-info">
+                            <span class="item-tag">Trending</span>
+                            <h3>Classic Brown Sugar Boba</h3>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="bento-card item-tall" style="--card-bg: url('img/Red\ velvet\ cake.webp');">
+                        <div class="item-visual">🎂</div>
+                        <div class="item-info">
+                            <span class="item-tag">Trending</span>
+                            <h3>Red velvet cake</h3>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="bento-card item-tall" style="--card-bg: url('img/Brownies.jpg');">
+                        <div class="item-visual">🎂</div>
+                        <div class="item-info">
+                            <span class="item-tag">Trending</span>
+                            <h3>Brownies</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>&copy;  <span>Uberry Fancy Cake</span>  Shop.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
